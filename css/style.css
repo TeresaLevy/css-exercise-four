@@ -1,4 +1,42 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  width: 100%;
+}
+.container {
+  display: block;
+}
+@media screen and (min-width: 575px){
+.container {
+    margin: 2%;
+    width: 40%;
+  }
+}
+.container h1 {
+  display: inline-block;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: left;
+  position: relative;
+  top: 50px; left: 30px;
+}
+.emphasis h1{
+  font-size: 90%;
+  font-family: sans-serif;
+  padding-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img {
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+  object-fit: cover;
 }
